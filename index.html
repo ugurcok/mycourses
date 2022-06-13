@@ -14,7 +14,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-</head>
+
+
+        <!-- swiperjs cdn -->
+
+        <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+
+    </head>
 <body>
     
     <nav>
@@ -259,7 +268,97 @@
                 </section>
 
 
+                <section class="containe testimonials_Container swiper mySwiper">
+                    <h2>Students' testimonials </h2>
+                    <div class="swiper-wrapper">
+                        <article class="testimonial swiper-slide">
+                            <div class="avatar">
+                                <img src="img/avatar1.jpg">
+                            </div>
+                            <div class="testimonail_info">
+                                <h5>Diana ayi</h5>
+                                <small>Student</small>
+                            </div>
+                            <div class="testimonial_body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, non repellat nisi officiis illum delectus sequi dignissimos cum iure quisquam alias amet commodi adipisci quaerat pariatur error fugiat ipsa id.
+                            </div>
+                        </article>
+
+                        <article class="testimonial swiper-slide">
+                            <div class="avatar">
+                                <img src="img/avatar2.jpg">
+                            </div>
+                            <div class="testimonail_info">
+                                <h5>mehmet serin</h5>
+                                <small>social media manager</small>
+                            </div>
+                            <div class="testimonial_body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, non repellat nisi officiis illum delectus sequi dignissimos cum iure quisquam alias amet commodi adipisci quaerat pariatur error fugiat ipsa id.
+                            </div>
+                        </article>
+
+                        <article class="testimonial swiper-slide">
+                            <div class="avatar">
+                                <img src="img/avatar3.jpg">
+                            </div>
+                            <div class="testimonail_info">
+                                <h5>ebru aksoy</h5>
+                                <small>Teacher</small>
+                            </div>
+                            <div class="testimonial_body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, non repellat nisi officiis illum delectus sequi dignissimos cum iure quisquam alias amet commodi adipisci quaerat pariatur error fugiat ipsa id.
+                            </div>
+                        </article>
+
+                        <article class="testimonial swiper-slide">
+                            <div class="avatar">
+                                <img src="img/avatar4.jpg">
+                            </div>
+                            <div class="testimonail_info">
+                                <h5>mert onur çetin</h5>
+                                <small>sales person</small>
+                            </div>
+                            <div class="testimonial_body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, non repellat nisi officiis illum delectus sequi dignissimos cum iure quisquam alias amet commodi adipisci quaerat pariatur error fugiat ipsa id.
+                            </div>
+                        </article>
+
+                        <article class="testimonial swiper-slide">
+                            <div class="avatar">
+                                <img src="img/avatar5.jpg">
+                            </div>
+                            <div class="testimonail_info">
+                                <h5>haydar koçak</h5>
+                                <small>fucker</small>
+                            </div>
+                            <div class="testimonial_body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, non repellat nisi officiis illum delectus sequi dignissimos cum iure quisquam alias amet commodi adipisci quaerat pariatur error fugiat ipsa id.
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </section>
+
 <script src="main.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        //when window with is >=600px
+        breakpoints :{
+            600: {
+                slidesPerView: 2,
+            }
+        }
+      });
+</script>
+
 
 </body>
 </html>

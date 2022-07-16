@@ -1,3 +1,3 @@
 # mycourses
-## https://ugurcok.github.io/mycourses/##
+## https://ugurcok.github.io/mycourses//##
 
